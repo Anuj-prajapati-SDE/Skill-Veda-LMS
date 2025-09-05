@@ -115,8 +115,8 @@ const StudentDataAnalytics = () => {
                       <a href="#">{student.name}</a>
                     </td>
                     <td>
-                      {courses[student.interestedCourses._id] ||
-                        "Unknown Course"}
+                      {/* {courses[student.interestedCourses._id] || */}
+                        "Unknown Course"
                     </td>
                     <td>{new Date(student.createdAt).toLocaleString()}</td>
                     <td>{student.gender}</td>

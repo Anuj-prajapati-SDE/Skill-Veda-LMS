@@ -7,7 +7,7 @@ const transporter = require('../configs/nodemailer.config');
 
 exports.registerUser = async (req, res) => {
   try {
-    const { name, email, password, phoneNumber, batch, gender, interestedCourses } = req.body;
+    const { name, email, password, phoneNumber, batch, gender} = req.body;
 
     const existingUser = await User.findOne({ email });
     if (existingUser) {
@@ -16,8 +16,8 @@ exports.registerUser = async (req, res) => {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
-    const validCourses = await Course.find({ _id: { $in: interestedCourses } }).select("_id");
-    const courseIds = validCourses.map(course => course._id);
+    // const validCourses = await Course.find({ _id: { $in: interestedCourses } }).select("_id");
+    // const courseIds = validCourses.map(course => course._id);
 
     const otpCode = Math.floor(100000 + Math.random() * 900000).toString();
     const otpExpiration = Date.now() + 1 * 60 * 1000; // 1 minute
@@ -31,7 +31,7 @@ exports.registerUser = async (req, res) => {
       gender,
       otp: { code: otpCode, expiration: otpExpiration },
       isVerified: false,
-      interestedCourses: courseIds,
+      // interestedCourses: courseIds,
     });
 
     await newUser.save();

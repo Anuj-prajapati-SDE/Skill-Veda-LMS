@@ -13,7 +13,7 @@ const SignupPage = () => {
   const apiUrl = import.meta.env.VITE_Backend_URL;
   const navigate = useNavigate();
   const notifyA = (e) => toast.success(e);
-  const notifyB = (e) => toast.error(e);
+  const notifyB = (e) => toast.error(e); 
   const [loader, setLoader] = useState(false);
   const [courses, setCourses] = useState([]);
   const [formData, setFormData] = useState({
@@ -23,7 +23,7 @@ const SignupPage = () => {
     phoneNumber: "",
     gender: "",
     batch: "",
-    interestedCourses: [],
+    // interestedCourses: [],
   });
   const [otp, setOtp] = useState("");
   const [isOtpSent, setIsOtpSent] = useState(false);
@@ -88,11 +88,11 @@ const SignupPage = () => {
       return false;
     }
 
-    if (formData.interestedCourses.length === 0) {
-      setLoader(false);
-      notifyB("Please select at least one course");
-      return false;
-    }
+    // if (formData.interestedCourses.length === 0) {
+    //   setLoader(false);
+    //   notifyB("Please select at least one course");
+    //   return false;
+    // }
 
     return true;
   };
@@ -228,13 +228,13 @@ const SignupPage = () => {
                               </div>
 
                               {/* Course Selection Dropdown */}
-                              <div className="form-group">
+                              {/* <div className="form-group">
                                 <select className="form-control" multiple name="interestedCourses" value={formData.interestedCourses} onChange={handleCourseChange} required>
                                   {courses.map(course => (
                                     <option key={course._id} value={course._id}>{course.name}</option>
                                   ))}
                                 </select>
-                              </div>
+                              </div> */}
 
                               <button type="submit">Sign Up</button>
                             </>

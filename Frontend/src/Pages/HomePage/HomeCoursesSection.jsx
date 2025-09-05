@@ -16,9 +16,12 @@ const HomeCoursesSection = () => {
   const fetchCourses = async () => {
     try {
       const response = await axios.get(`${apiUrl}/api/admin/getPublishedCourses`);
+      console.log('Fetched courses:', response);
+      
       const sortedCourses = response.data.sort((a, b) => b.rating - a.rating);
       setCourses(sortedCourses);
-    } catch (error) {
+    }
+     catch (error) {
       console.error('Failed to fetch courses:', error);
       setCourses([]);
     }
@@ -27,6 +30,19 @@ const HomeCoursesSection = () => {
   const placeholderCourses = [
     {
       _id: 1,
+      image: placeholder_600,
+      duration: 'Lifetime',
+      enrolledStudents: [],
+      advisorImage: placeholder_100,
+      advisorName: 'N/A',
+      category: 'N/A',
+      rating: 0,
+      reviews: 0,
+      fees: 'Free',
+      name: 'No Course Available',
+    },
+    {
+      _id: 2,
       image: placeholder_600,
       duration: 'Lifetime',
       enrolledStudents: [],
