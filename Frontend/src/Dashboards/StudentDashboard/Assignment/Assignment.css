@@ -1,0 +1,121 @@
+.student-assignment-container {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+  width: 100%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-details {
+  position: relative;
+  display: flex;
+  justify-content: start;
+}
+
+.assignment-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.assignment-heading p{
+  font-weight: bold;
+}
+
+.assignment-heading-data {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20%;
+}
+
+.assignment-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin: auto;
+  border: 1px solid #ccc;
+  font-family: Arial, sans-serif;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.assignment-details p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.assignment-details strong {
+  color: #555;
+}
+
+.assignment-details span {
+  color: #666;
+}
+
+.assignment-status-btn {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--theme-color);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.status-container {
+  padding: 10px;
+  width: 300px;
+  margin: 10px 0;
+}
+
+.assignment-btn {
+  position: relative;
+}
+
+.status {
+  font-size: 16px;
+}
+
+.submitted {
+  color: green;
+  font-weight: bold;
+}
+
+.download-btn {
+  background: var(--theme-color);
+  color: white;
+  border: none;
+  margin-left: 10px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background: var(--theme-color-light);
+}
+
+@media (max-width: 600px) {
+  .assignment-card {
+    width: 90%;
+    padding: 15px;
+  }
+  .assignment-details p {
+    font-size: 14px;
+  }
+  .download-btn {
+    font-size: 14px;
+  }
+}

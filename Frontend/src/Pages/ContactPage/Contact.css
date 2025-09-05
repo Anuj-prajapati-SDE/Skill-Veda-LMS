@@ -1,0 +1,117 @@
+/* ============================================================== 
+     # Contact
+=================================================================== */
+.contact-area .contact-items {
+    background: #ffffff;
+    box-shadow: 1px 4px 20px -2px rgba(0,0,0,0.1);
+    padding: 50px;
+    position: relative;
+    bottom: -120px;
+    margin-top: -120px;
+  }
+  
+  .contact-area .contact-items .left-item .item {
+    display: flex;
+  }
+  
+  .contact-area .contact-items .left-item i {
+    display: inline-block;
+    font-size: 40px;
+    color: var(--theme-color);
+    margin-right: 25px;
+  }
+  
+  .contact-area .contact-items .left-item .item .info h5 {
+    font-weight: 700;
+  }
+  
+  .contact-area .contact-items .left-item .item {
+    margin-top: 40px;
+  }
+  
+  .contact-area .contact-items .left-item .item:first-child {
+    margin-top: 0;
+  }
+  
+  .contact-area .contact-items .left-item .item .info p {
+    margin: 0;
+  }
+  
+  .contact-area .contact-items .right-item {
+    padding-left: 35px;
+    border-left: 1px solid #e7e7e7;
+  }
+  
+  .contact-area .contact-items .right-item h5 {
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #888888;
+  }
+  
+  .contact-area .contact-items .right-item h2 {
+    font-weight: 800;
+  }
+  
+  .contact-area .contact-items .right-item input, 
+  .contact-area .contact-items .right-item textarea {
+    border: none;
+    box-shadow: inherit;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0;
+    border-radius: inherit;
+  }
+  
+  .contact-area .contact-items .right-item textarea {
+    min-height: 150px;
+  }
+  
+  .contact-area .contact-items .right-item button {
+    background: transparent;
+    padding: 17px 40px;
+    color: #ffffff;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 15px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .contact-area .contact-items .right-item button::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, var(--theme-color) 0%, var(--theme-color-light) 75%);
+    transition: all 0.35s ease-in-out;
+    z-index: -1;
+    box-shadow: 0 0 10px var(--theme-color-shadow), inset 0 0 1px 1px var(--theme-color);
+    border-radius: 5px;
+  }
+  
+  .contact-area .contact-items .right-item button i {
+    margin-left: 3px;
+  }
+  
+  .contact-area .contact-items img.loader {
+    margin-left: 10px;
+  }
+  
+  
+  /* Google Maps */
+  
+  .google-maps iframe {
+    border: medium none;
+    height: 550px;
+    margin-bottom: -10px;
+    width: 100%;
+  }
+  
+  .maps-area {
+    overflow: hidden;
+  }
+  
+  
+  

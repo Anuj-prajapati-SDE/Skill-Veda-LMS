@@ -1,0 +1,192 @@
+/* Floating Chat Button */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.chat-button:hover {
+    background-color: var(--theme-color-light);
+}
+
+/* Chatbox */
+.chat-box {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 9999;
+    width: 350px;
+    background: white;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Header */
+.chat-header {
+    background-color: var(--theme-color);
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-header h5{
+    margin-bottom: 0;
+    color: aliceblue;
+}
+
+.chat-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* Chat Body */
+.chat-body {
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background: var(--gray-b);
+}
+
+
+.message {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: var(--radius);
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.message.user {
+    background: var(--theme-color-light);
+    color: white;
+    align-self: flex-end;
+    text-align: right;
+    margin-left: auto;
+}
+
+.message.bot {
+    background: var(--gray-3);
+    color: var(--gray-1);
+    align-self: flex-start;
+}
+
+/* Chat Footer */
+.chat-footer {
+    display: flex;
+    padding: 10px;
+    background: white;
+    border-top: var(--border-2);
+}
+
+.chat-input {
+    flex-grow: 1;
+    padding: 8px;
+    border: var(--border-2);
+    border-radius: var(--radius);
+}
+
+.chat-send {
+    margin-left: 8px;
+}
+
+/* Not Satisfied Button */
+.not-satisfied-button {
+    background: var(--red);
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.not-satisfied-button:hover {
+    background: var(--red-dark);
+}
+
+/* Help Section */
+.help-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.help-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.help-title {
+    color: var(--theme-color);
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    margin-left: 5px;
+}
+
+.help-text {
+    text-align: start;
+    color: var(--gray-1);
+    margin: 10px 0;
+}
+
+.issue-input {
+    width: 100%;
+    padding: 12px;
+    border: var(--border-2);
+    border-radius: var(--radius);
+    font-size: 14px;
+    resize: none;
+}
+
+.submit-issue {
+    background: var(--theme-color);
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.submit-issue:hover {
+    background: var(--theme-color-light);
+}
+
+/* Back Button */
+.back-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--theme-color);
+}

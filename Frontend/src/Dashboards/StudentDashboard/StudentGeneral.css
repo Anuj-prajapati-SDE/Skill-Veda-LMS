@@ -1,0 +1,121 @@
+.student-courses-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #fff;
+    width: 100%;
+    height: 10vh;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+
+.student-courses-header h2 {
+    font-size: 2.5vw;
+    font-weight: 500;
+    color: var(--light-gray);
+    margin-bottom: 0px;
+}
+
+.student-courses-header .header-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.student-search-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 80%;
+    max-width: 500px;
+}
+
+.student-search-input {
+    position: relative;
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 10px 18px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.student-search-bar a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    width: 50px;
+    height: 50px;
+    color: #aaa;
+    border-radius: 40px;
+    background-color: #f9f9f9;
+    font-size: 22px;
+}
+
+.student-search-bar .logout-icon {
+    color: var(--theme-color);
+}
+
+.student-search-input::placeholder {
+    color: #aaa;
+}
+
+.student-search-button {
+    background-color: var(--theme-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.student-search-button:hover {
+    background-color: var(--theme-color);
+}
+
+@media only screen and (max-width: 440px) {
+    .student-search-input {
+        font-size: 10px;
+        padding: 10px;
+        /* height: 5vh; */
+    }
+
+    .student-courses-header h2 {
+        font-size: 5vw;
+        text-align: start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .student-search-bar {
+        height: auto;
+    }
+
+    .student-search-button {
+        padding: 5px;
+        line-height: 1;
+        font-size: 3vw;
+    }
+
+    .student-search-bar a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .student-search-bar i {
+        font-size: 12px;
+    }
+}

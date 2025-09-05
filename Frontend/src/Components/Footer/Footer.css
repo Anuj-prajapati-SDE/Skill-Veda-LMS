@@ -1,0 +1,190 @@
+/* ============================================================== 
+     # Footer
+=================================================================== */
+
+footer .item {
+    margin-top: 50px;
+  }
+  
+  footer .f-items.default-padding {
+    padding-top: 70px;
+  }
+  
+  footer .f-item.about {
+    padding-right: 30px;
+  }
+  
+  footer .item img {
+    margin-bottom: 30px;
+  }
+  
+  footer .item .widget-title {
+    margin-bottom: 30px;
+    font-weight: 800;
+  }
+  
+  footer .item .link ul li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    position: relative;
+  }
+  
+  footer .item .link ul li::after {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    content: "";
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #bcb3b3;
+  }
+  
+  footer.bg-dark .item .link li a {
+    color: #cccccc;
+  }
+  
+  footer .link li a:hover {
+    color: var(--theme-color);
+  }
+  
+  footer .item .link li:last-child {
+    margin-bottom: 0;
+  }
+  
+  footer .item .subscribe form {
+    background: #fafafa;
+    border: 1px solid #e7e7e7;
+    margin-top: 30px;
+    position: relative;
+    border-radius: 30px;
+  }
+  
+  footer.bg-dark .item .subscribe form {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  footer .item .subscribe form input {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 30px;
+  }
+  
+  footer .item .subscribe form button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    width: 50px;
+    color: #ffffff;
+    background: var(--theme-color);
+    border-radius: 50%;
+  }
+  
+  footer.bg-dark .item .subscribe form button {
+    color: var(--theme-color);
+    background: #ffffff;
+  }
+  
+  footer .item .opening-info {
+    margin-top: 30px;
+  }
+  
+  footer .item .opening-info h5 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+  }
+  
+  footer .item .opening-info li {
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  footer.bg-dark .item .opening-info li {
+    font-weight: 400;
+  }
+  
+  footer.bg-dark .item .opening-info li {
+    color: #cccccc;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  footer .item .opening-info li:last-child {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  
+  footer .address li {
+    margin-bottom: 10px;
+  }
+  
+  footer.bg-dark .address li {
+    color: #cccccc;
+  }
+  
+  footer .address li:last-child {
+    margin-bottom: 0;
+  }
+  
+  footer.bg-dark .address li strong {
+    color: #ffffff;
+  }
+  
+  footer .social {
+    margin-top: 30px;
+  }
+  
+  footer .social h5 {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 16px;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 15px;
+  }
+  
+  footer.bg-dark .social h5 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  
+  footer .social li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+  
+  footer .social li a {
+    color: #666666;
+  }
+  
+  /* Footer Bottom */
+  
+  .footer-bottom {
+    padding: 30px 0;
+    border-top: 1px solid #e7e7e7;
+    background: #fafafa;
+  }
+  
+  footer.bg-dark .footer-bottom {
+    border-top: 1px solid #000;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, .4), inset 0 1px 1px rgba(255, 255, 255, .2);
+    background: transparent;
+  }
+  
+  .footer-bottom li {
+    display: inline-block;
+  }
+  
+  .footer-bottom .text-right li {
+    margin-left: 20px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  

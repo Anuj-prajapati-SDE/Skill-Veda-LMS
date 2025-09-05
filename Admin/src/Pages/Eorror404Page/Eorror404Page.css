@@ -1,0 +1,26 @@
+
+/* ============================================================== 
+     # Error 404
+=================================================================== */
+.error-page-area .thumb {
+    padding-right: 35px;
+    text-align: center;
+  }
+  
+  .error-page-area h1 {
+    font-size: 150px;
+    line-height: 120px;
+    font-weight: 900;
+    margin-bottom: 20px;
+  }
+  
+  .error-page-area h2 {
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  
+  .error-page-area a {
+    margin-top: 15px;
+  }
+  
+  

@@ -1,0 +1,42 @@
+.student-analytics-container {
+    width: 100%;
+}
+
+.student-analytics-container table a{
+    margin-left: 10px;
+}
+
+.table-1{
+    padding-left: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    height: 70vh;
+    margin-bottom: 20px;
+    overflow-y: scroll;
+}
+
+.table-1::-webkit-scrollbar{
+    display: none;
+}
+
+.student-data-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+    font-weight: bold;
+}
+.student-analytics-searchbar{
+    display: inline-flex;
+    gap: 10px;
+    width: 40%;
+}
+
+.student-analytics-searchbar input{
+    /* box-shadow: var(--shadow); */
+    width: 100%;
+    border: var(--border-2);
+}

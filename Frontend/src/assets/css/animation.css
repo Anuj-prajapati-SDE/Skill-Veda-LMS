@@ -1,0 +1,25 @@
+/* HomeBannerSection animation */
+@keyframes smoothFadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+   
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .smooth-paragraph-animation {
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  .smooth-paragraph-animation.animate {
+    transition: 0.3s ease-in-out;
+    animation: smoothFadeInUp 1.3s cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+  }
+  
+  

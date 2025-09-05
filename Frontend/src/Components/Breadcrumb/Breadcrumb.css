@@ -1,0 +1,95 @@
+/* ============================================================== 
+     # Bradcrumb 
+=================================================================== */
+.breadcrumb-area {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  
+  
+  .breadcrumb-area .fixed-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .breadcrumb-area .fixed-bg img {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+  }
+  
+  .breadcrumb-area h1 {
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 40px;
+  }
+  
+  .breadcrumb-area .breadcrumb {
+    background: transparent none repeat scroll 0 0;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .page-title-area {
+    padding: 150px 0;
+  }
+  
+  .page-title-area h1 {
+    display: block;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: -10px;
+    margin-bottom: 0;
+  }
+  
+  .breadcrumb-area .breadcrumb li::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -8px;
+    height: 15px;
+    width: 2px;
+    transform: rotate(26deg);
+    background: #ffffff;
+  }
+  
+  .breadcrumb-area .breadcrumb li i {
+    margin-right: 5px;
+  }
+  
+  .breadcrumb-area .breadcrumb li {
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    margin: 0 5px;
+    padding: 0 7px;
+  }
+  
+  .breadcrumb-area .breadcrumb li:last-child::after {
+    display: none;
+  }
+  
+  .breadcrumb-area .breadcrumb a, 
+  .breadcrumb-area .breadcrumb li {
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #ffffff;
+  }
+  
+  .breadcrumb-area .breadcrumb li.active {
+    color: #ffffff;
+  }
+  

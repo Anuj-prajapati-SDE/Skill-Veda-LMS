@@ -1,0 +1,183 @@
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 5px auto;
+    border: 1px solid var( --theme-color);
+    border-radius: 10px;
+    overflow: hidden;
+    /* background-color: var(--back-ground-color); */
+}
+ 
+.profile-photo img {
+    width: 7vw;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-size: 18px;
+    color: var(--dark-text-primary);
+}
+
+.profile-email {
+    font-size: 14px;
+    color: var(--dark-text-secondary);
+}
+
+.profile-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.profile-menu li {
+    padding: 10px;
+    text-align: center;
+    color: var(--dark-text-secondary);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.profile-menu li:hover,
+.profile-menu li.active {
+    background-color: var(--sparkle-purple);
+    color: var(--dark-text-primary);
+}
+
+.profile-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.profile-photo-section {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill;
+}
+
+.file-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--theme-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: var(--theme-color-light);
+}
+
+.profile-container input[type="file"] {
+    display: none;
+}
+
+
+.profile-info h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--theme-color-light);
+}
+
+.profile-container .form-group input,
+.profile-container .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--theme-color-light);
+    background-color: var( --gray-3);
+    color: var( --gray-1);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.save-button {
+    background-color: var(--theme-color);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.save-button:hover {
+    background-color: var(--theme-color-light);
+}
+
+/* Additional Quill Editor Styling */
+.ql-container {
+    border-radius: 5px;
+}
+
+.ql-toolbar {
+    background-color: var(--theme-color);
+ 
+    border: 1px solid var(--sparkle-purple-border);
+}
+
+.ql-container.ql-snow {
+  border-radius: 0px;
+  min-height: 100px;
+    border: 1px solid var(--gray-2);
+    border-top: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        margin-top: 70px;
+    }
+
+    .profile-photo img {
+        width: 22vw;
+        margin-top: 20px;
+    }
+
+    .profile-sidebar {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .profile-content {
+        padding: 10px;
+    }
+}

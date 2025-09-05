@@ -1,0 +1,69 @@
+/* ============================================================== 
+     # Faq
+=================================================================== */
+.faq-items .faq-content h2 {
+    font-weight: 200;
+    margin-bottom: 30px;
+    margin-top: -5px;
+    text-transform: capitalize;
+  }
+  
+  .faq-items .faq-content h2 strong {
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .faq-area .thumb {
+    padding-left: 35px;
+  }
+  
+  .accordion .card-header h4:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f06e";
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    font-weight: 600;
+  }
+  
+  .accordion .card-header h4.collapsed:after {
+    content: "\f070";
+    font-weight: 600;
+  }
+  
+  .faq-area .faq-content .card {
+    border: 1px solid #dddddd;
+    margin-bottom: 15px;
+    overflow: inherit;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  
+  .faq-area .faq-content .card:last-child {
+    margin-bottom: 0;
+  }
+  
+  .faq-area .faq-content .card .card-header {
+    border: none;
+    background: transparent;
+    padding: 0;
+  }
+  
+  .faq-area .faq-content .card .card-header h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 30px;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+  
+  .faq-area .faq-content .card .card-body {
+    padding-left: 30px;
+    padding-top: 0;
+  }
+  
+  .faq-area .ask-question a {
+    color: var(--theme-color);
+    text-decoration: underline;
+  }

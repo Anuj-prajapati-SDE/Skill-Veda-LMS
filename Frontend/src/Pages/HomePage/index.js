@@ -1,0 +1,21 @@
+import Footer from "../../Components/Footer/Footer";
+import FunFactorSection from "./FunFactorSection";
+import HomeAboutSection from "./HomeAboutSection";
+import CourseAdvisorSection from "./CourseAdvisorSection";
+import HomeCoursesSection from "./HomeCoursesSection";
+import HomeWhyChoseSection from "./HomeWhyChoseSection";
+import HomeBannerSection from "./HomeBannerSection";
+import HomeDefaultFeature from "./HomeDefaultFeature";
+import HomeTestimonialSection from "./HomeTestimonialCarousel";
+import HomeEventSection from "./HomeEventSection";
+
+export const FooterPage = Footer;
+export const HomeFunFactorSectionPage = FunFactorSection;
+export const HomeAboutSectionPage = HomeAboutSection;
+export const HomeCourseAdvisorSectionPage = CourseAdvisorSection;
+export const HomeCoursesSectionPage = HomeCoursesSection;
+export const HomeWhyChoseSectionPage = HomeWhyChoseSection;
+export const HomeBannerSectionPage = HomeBannerSection;
+export const HomeDefaultFeaturePage = HomeDefaultFeature;
+export const HomeTestimonialSectionPage = HomeTestimonialSection;
+export const HomeEventSectionPage = HomeEventSection; 
