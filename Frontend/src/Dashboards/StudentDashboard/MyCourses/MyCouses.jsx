@@ -88,7 +88,7 @@ const MyCourses = () => {
   );
 
   return (
-    <div className="courses-section">
+    <div className="courses-section-s">
       {isCourses && (
         <>
           {/* Page Heading with Search Bar */}

@@ -22,7 +22,7 @@ const AdminDashboard = () => {
         if (!id) {
           return;
         }
-        const response = await axios.get(`${apiUrl}/api/admin/getAdminDetails/${id}`);
+        const response = await axios.get(`${apiUrl}api/admin/getAdminDetails/${id}`);
         setAdminData((prev) => ({
           ...prev,
           ...response.data.admin, // Ensures structure is maintained

@@ -39,7 +39,7 @@ const Course = () => {
 
   const fetchCourses = async () => {
     try {
-      const response = await axios.get(`${apiUrl}api/admin/getcourses`);
+      const response = await axios.get(`${apiUrl}/api/admin/getcourses`);
       setCourses(response.data);
       console.log(response.data);
       setOriginalCourses(response.data); // Store a copy in originalCourses

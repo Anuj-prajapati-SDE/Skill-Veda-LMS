@@ -22,22 +22,23 @@ const Button_4 = () => {
 
   const apiUrl = import.meta.env.VITE_Backend_URL;
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(`${apiUrl}/api/admin/result`);
-        setResultDatas(response.data);
-      } catch (error) {
-        console.error("Error fetching assignments:", error);
-        toast.error("Failed to load Results");
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await axios.get(`${apiUrl}/api/admin/result`);
+  //     console.log(response)
+  //       setResultDatas(response.data);
+  //     } catch (error) {
+  //       console.error("Error fetching assignments:", error);
+  //       toast.error("Failed to load Results");
         
-      } finally {
-        setLoading(false);
-      }
-    };
+  //     } finally {
+  //       setLoading(false);
+  //     }
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
 
   return (
     <div>

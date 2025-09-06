@@ -26,9 +26,9 @@ const LoginPage = () => {
       const response = await fetch(`${apiUrl}/api/auth/login`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        credentials: "include", // Important: Send cookies
+        credentials: "include", // Important: Send cookies 
         body: JSON.stringify({ email, password }),
-      });
+      }); 
 
       if (response.ok) {
         notifyA("Login successful");

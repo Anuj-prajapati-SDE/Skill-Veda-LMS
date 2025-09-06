@@ -11,19 +11,19 @@ const Assignment = () => {
   const navigate = useNavigate();
   const apiUrl = import.meta.env.VITE_Backend_URL;
 
-  useEffect(() => {
-    const fetchAssignments = async () => {
-      try {
-        const response = await axios.get(`${apiUrl}/api/admin/assignment`);
-        // setAssignments(response.data);
-      } catch (error) {
-        console.error("Error fetching assignments:", error);
-        toast.error("Failed to load assignments");
-      }
-    };
+  // useEffect(() => {
+  //   const fetchAssignments = async () => {
+  //     try {
+  //       const response = await axios.get(`${apiUrl}/api/admin/assignment`);
+  //       // setAssignments(response.data);
+  //     } catch (error) {
+  //       console.error("Error fetching assignments:", error);
+  //       toast.error("Failed to load assignments");
+  //     }
+  //   };
 
-    fetchAssignments();
-  }, []);
+  //   fetchAssignments();
+  // }, []);
 
   const notifyA = (message) => toast.success(message);
 

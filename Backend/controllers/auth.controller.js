@@ -198,7 +198,7 @@ exports.loginUser = async (req, res) => {
     const { email, password } = req.body;
     let user = await User.findOne({ email });
 
-    if (!user) {
+    if (!user) { 
       return res.status(400).json({ message: "User not found" });
     }
 
@@ -223,7 +223,7 @@ exports.loginUser = async (req, res) => {
   } catch (error) {
     res.status(500).json({ message: "Login failed. Please try again later." });
   }
-};
+}; 
 
 exports.loginAdmin = async (req, res) => {
   try {
