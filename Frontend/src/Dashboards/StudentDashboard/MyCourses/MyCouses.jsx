@@ -170,7 +170,7 @@ const MyCourses = () => {
           ) : error ? (
             <p className="error-text">{error}</p>
           ) : filteredCourses.length > 0 ? ( // Use filteredCourses here
-            <div className="Courses-card-container container mt-2">
+            <div className="Courses-card-container container mt-2"> 
               {filteredCourses.map((course) => ( // Use filteredCourses here
                 <CourseCard key={course._id} {...course} />
               ))}
